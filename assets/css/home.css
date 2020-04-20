@@ -1,0 +1,35 @@
+/** Global Colors **/
+/** FONTS **/
+body {
+  background-color: #1c1c1c; }
+
+#intro img {
+  max-width: 200px;
+  max-height: 200px;
+  border: 6px solid #ffffff;
+  border-radius: 100%;
+  -moz-box-shadow: 0 4px 16px 0 black;
+  -webkit-box-shadow: 0 4px 16px 0 black;
+  box-shadow: 0 4px 16px 0 black; }
+
+#intro h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+#intro p {
+  font-size: .875rem;
+  margin-bottom: 5px;
+  color: #ffffff; }
+
+#intro .social {
+  font-size: 1.25rem;
+  padding: 0;
+  list-style: none; }
+  #intro .social li {
+    display: inline;
+    margin-right: 10px; }
+  #intro .social a {
+    color: #ffffff; }
