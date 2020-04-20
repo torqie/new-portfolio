@@ -1,0 +1,79 @@
+/** Global Colors **/
+/** FONTS **/
+/** Global Colors **/
+/** FONTS **/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, sans-serif;
+  color: #ffffff; }
+
+/** Global Colors **/
+/** FONTS **/
+body {
+  background-color: #1c1c1c; }
+
+#intro img {
+  max-width: 200px;
+  max-height: 200px;
+  border: 6px solid #ffffff;
+  border-radius: 100%;
+  -moz-box-shadow: 0 4px 16px 0 black;
+  -webkit-box-shadow: 0 4px 16px 0 black;
+  box-shadow: 0 4px 16px 0 black; }
+
+#intro h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+#intro p {
+  font-size: .875rem;
+  margin-bottom: 5px;
+  color: #ffffff; }
+
+#intro .social {
+  font-size: 1.25rem;
+  padding: 0;
+  list-style: none; }
+  #intro .social li {
+    display: inline;
+    margin-right: 10px; }
+  #intro .social a {
+    color: #ffffff; }
+
+.scroll-down {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 0;
+  width: 100%; }
+  .scroll-down .mouse-wrapper {
+    font-size: 14px;
+    display: block;
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    color: #FFF; }
+    .scroll-down .mouse-wrapper .mouse {
+      position: relative;
+      display: block;
+      width: 20px;
+      height: 26px;
+      margin: auto;
+      margin-top: 10px;
+      border: solid 2px #FFF;
+      border-radius: 16px; }
+      .scroll-down .mouse-wrapper .mouse .mouse .wheel {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        display: block;
+        width: 4px;
+        height: 4px;
+        transform: translateX(-50%);
+        -moz-animation: ani-mouse 2s linear infinite;
+        -webkit-animation: ani-mouse 2s linear infinite;
+        animation: ani-mouse 2s linear infinite;
+        border-radius: 100%;
+        background: #FFFFFF; }
