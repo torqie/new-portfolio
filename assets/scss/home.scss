@@ -1,0 +1,23 @@
+@import "variables";
+
+#intro {
+  img {
+    border: 6px solid $light;
+    -moz-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 1);
+  }
+
+  .name {
+    color: $light;
+
+  }
+
+  .description {
+
+  }
+
+  .social {
+
+  }
+}
