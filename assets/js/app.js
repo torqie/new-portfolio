@@ -1,4 +1,6 @@
-window.__forceSmoothScrollPolyfill__ = true;
+
+
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
