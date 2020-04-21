@@ -7,7 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
 
     $(".nav .nav-item .active").removeClass("active");
-    $(this).addClass("active");
+    var el = $(this).attr("data-id");
+    $("[data-id='" + el + "'").addClass("active");
+    //$(this).addClass("active");
 
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
