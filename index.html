@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 
 </head>
 <body>
@@ -42,8 +43,8 @@
             <div class="col min-vh-100">
 
               <!--HOME PAGE-->
-              <div id="home" class="p-3 page min-vh-100">
-                <div class="col">
+              <div id="home" class="p-3 page min-vh-100 d-flex">
+                <div class="col d-flex justify-content-center align-items-center">
                   <div class="text-center" id="intro">
                     <img alt="Terik Hone" class="img-fluid" src="assets/images/terik.jpg">
                     <h1 class="name">Jeffery Hone</h1>
@@ -61,20 +62,6 @@
                 <h3>About Me</h3>
                 <div class="card">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="email"></label>
-                      <input type="email" id="email" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="message"></label>
-                      <textarea id="message" class="form-control" rows="10" ></textarea>
-                    </div>
 
                   </div>
                 </div>
@@ -191,21 +178,32 @@
 
                 <div class="card">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" class="form-control">
-                    </div>
+                    <div class="row">
+                      <div class="d-none d-lg-block col-lg-4">
+                        <div class="align-middle justify-content-center">
+                          <i class="fa fa-envelope mail-icon"></i>
+                        </div>
 
-                    <div class="form-group">
-                      <label for="email"></label>
-                      <input type="email" id="email" class="form-control">
-                    </div>
+                      </div>
+                      <div class="col">
+                        <form>
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control">
+                          </div>
 
-                    <div class="form-group">
-                      <label for="message"></label>
-                      <textarea id="message" class="form-control" rows="10" ></textarea>
-                    </div>
+                          <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control">
+                          </div>
 
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="10" ></textarea>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

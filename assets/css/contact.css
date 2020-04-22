@@ -1,0 +1,9 @@
+#contact {
+
+}
+
+#contact .mail-icon {
+  font-size: 15.625rem;
+  transform: rotate(-45deg);
+  color: #efefef;
+}
