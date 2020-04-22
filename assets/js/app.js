@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $('[data-toggle="popover"]').popover({
+    trigger: "hover"
+  });
+
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -24,7 +29,26 @@ $(document).ready(function() {
       $("[data-id='" + this.element.id + "'").addClass("active");
     }
   }, { offset: "-50%"});
+
+
+
+  var currentInt= 1;
+  function displayNewRole() {
+    var roles = ["Full-Stack Developer", "UI/UX Designer", "Part Time Photographer"];
+
+    if(currentInt === roles.length) {
+      currentInt = 0;
+    }
+
+    console.log("Role: ", roles[currentInt]);
+    $("#i-am-role").text(roles[currentInt]);
+    currentInt++;
+  }
+
+  setInterval(displayNewRole, 2000);
+
+
 });
 
-// .parent().prev().children("a")
+
 
