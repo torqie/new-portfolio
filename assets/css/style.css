@@ -99,6 +99,8 @@ body {
 
 }
 
+
+
 #intro img {
   max-width: 200px;
   max-height: 200px;
@@ -106,7 +108,8 @@ body {
   border-radius: 100%;
   -moz-box-shadow: 0 0 10px 0 #202020;
   -webkit-box-shadow: 0 0 10px 0 #202020;
-  box-shadow: 0 0 10px 0 #202020; }
+  box-shadow: 0 0 10px 0 #202020;
+ }
 
 #intro h1 {
   font-size: 2.5rem;
