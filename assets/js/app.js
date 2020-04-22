@@ -3,9 +3,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
-    $(".nav .nav-item .active").removeClass("active");
-    var el = $(this).attr("data-id");
-    $("[data-id='" + el + "'").addClass("active");
+    //$(".nav .nav-item .active").removeClass("active");
+    const el = $(this).attr("data-id");
+    //$("[data-id='" + el + "'").addClass("active");
 
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
@@ -14,26 +14,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// var pages = $(".page");
-//
-// pages.waypoint(function(direction) {
-//   if(direction === "down") {
-//     console.log(this.element.id + ' ' + direction);
-//     $(".nav .nav-item .active").removeClass("active");
-//     $("[data-id='" + this.element.id + "'").addClass("active");
-//   }
-// });
-//
-// pages.waypoint(function(direction) {
-//   if(direction === "up") {
-//     console.log(this.element.id + ' ' + direction);
-//     $(".nav .nav-item .active").removeClass("active");
-//     $("[data-id='" + this.element.id + "'").addClass("active");
-//   }
-// });
+const pages = $(".page");
 
-// var waypoints = $(".page").waypoint(function(direction) {
-//   console.log(this.element.id + ' ' + direction);
-//   $(".nav .nav-item .active").removeClass("active");
-//   $("[data-id='" + this.element.id + "'").addClass("active");
-// });
+pages.waypoint(function(direction) {
+  if(direction === "down") {
+    console.log(this.element.id + ' ' + direction);
+    console.log('Trigger point: ' + this.triggerPoint)
+    $(".nav .nav-item .active").removeClass("active");
+    $("[data-id='" + this.element.id + "'").addClass("active");
+  }
+}, { offset: "50%"});
+
+pages.waypoint(function(direction) {
+  if(direction === "up") {
+    console.log(this.element.id + ' ' + direction);
+    console.log('Trigger point: ' + this.triggerPoint)
+    $(".nav .nav-item .active").removeClass("active");
+    $("[data-id='" + this.element.id + "'").parent().prev().children("a").addClass("active");
+  }
+}, { offset: "50%"});
