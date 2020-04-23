@@ -1,0 +1,24 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss-compile": "node-sass -rw assets/scss -o assets/css",
+    "scss": "node-sass -watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torqie/new-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torqie/new-portfolio/issues"
+  },
+  "homepage": "https://github.com/torqie/new-portfolio#readme"
+}
