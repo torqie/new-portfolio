@@ -1,4 +1,4 @@
-const work = [
+const works = [
   {
     title: "Hangman",
     image: "assets/images/works/hangman.png",
@@ -41,10 +41,42 @@ const work = [
 
   {
     title: "Pat Knows Best",
-    image: "https://asuicidalcow.github.io/Pat-Knows-Best/",
+    image: "assets/images/works/pat-knows-best.png",
     description: "Team of 4 created a website that allows Pat your video and board game seretary to find and list 3 recommendations for you to view based on your search.",
     link: "https://asuicidalcow.github.io/Pat-Knows-Best/",
     github: "https://github.com/ASuicidalCow/Pat-Knows-Best"
   },
 
 ];
+
+
+for(let i = 0; i < works.length; i++) {
+  const workContent = $("#inner-works");
+  const cardOuter = $('<div class="col mb-4 d-flex">');
+  const card = $('<div class="card shadow-sm">');
+  const cardImage = $('<img src="" alt="" class="card-img-top" />');
+  const cardBody = $('<div class="card-body flex-fill">');
+  const cardTitle = $('<h5 class="card-title">');
+  const description = $('<p class="card-text">');
+  const cardFooter = $('<div class="card-footer">')
+  const githubLink = $('<a href="#" class="card-link text-right">');
+  const link = $('<a href="#" class="card-link">');
+
+  cardImage.attr("src", works[i].image);
+  cardTitle.text(works[i].title);
+  description.text(works[i].description);
+  githubLink.attr("href", works[i].github).text("Github Link");
+  link.attr("href", works[i].link).text("Demo Link");
+
+  githubLink.prependTo(cardFooter);
+  link.prependTo(cardFooter)
+  description.prependTo(cardBody);
+  cardTitle.prependTo(cardBody);
+  cardFooter.prependTo(card);
+  cardBody.prependTo(card);
+  cardImage.prependTo(card);
+  card.prependTo(cardOuter);
+  cardOuter.prependTo(workContent);
+
+  $(cardOuter).fadeIn()
+}
