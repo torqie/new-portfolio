@@ -59,7 +59,7 @@ for(let i = 0; i < works.length; i++) {
   const cardTitle = $('<h5 class="card-title">');
   const description = $('<p class="card-text">');
   const cardFooter = $('<div class="card-footer">')
-  const githubLink = $('<a href="#" class="card-link text-right">');
+  const githubLink = $('<a href="#" class="card-link float-right">');
   const link = $('<a href="#" class="card-link">');
 
   cardImage.attr("src", works[i].image);

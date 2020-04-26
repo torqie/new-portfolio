@@ -5,14 +5,14 @@ h1, h2, h3, h4, h5, h6, .btn {
 body {
   height: 100vh;
   overflow-x: hidden;
-  background-color: #282828;
+  background-color: #ffffff;
   font-family: Roboto, sans-serif;
 
 
 }
 #works {
   margin-bottom: 100px;
-  background-color: #505050;
+
 }
 
 .card a {
